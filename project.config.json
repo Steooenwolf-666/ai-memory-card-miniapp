@@ -1,0 +1,19 @@
+{
+  "description": "Memory Card Pro WeChat Mini Program",
+  "packOptions": {
+    "ignore": []
+  },
+  "setting": {
+    "urlCheck": true,
+    "es6": true,
+    "enhance": true,
+    "postcss": true,
+    "minified": true,
+    "newFeature": true
+  },
+  "compileType": "miniprogram",
+  "libVersion": "latest",
+  "appid": "touristappid",
+  "projectname": "ai-memory-card-miniapp",
+  "condition": {}
+}

@@ -1,0 +1,75 @@
+.container {
+  padding: 20rpx;
+  min-height: 100vh;
+  background: #f6f6f6;
+}
+
+.status-bar {
+  background: #fff;
+  padding: 20rpx;
+  border-radius: 10rpx;
+  margin-bottom: 20rpx;
+  box-shadow: 0 2rpx 4rpx rgba(0,0,0,0.1);
+}
+
+.status-text {
+  font-size: 28rpx;
+  color: #333;
+}
+
+.card-list {
+  margin-bottom: 120rpx;
+}
+
+.card-item {
+  background: #fff;
+  padding: 30rpx;
+  margin-bottom: 20rpx;
+  border-radius: 10rpx;
+  box-shadow: 0 2rpx 4rpx rgba(0,0,0,0.1);
+}
+
+.card-title {
+  font-size: 32rpx;
+  color: #333;
+  margin-bottom: 10rpx;
+}
+
+.card-status {
+  font-size: 24rpx;
+  color: #666;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 100rpx 0;
+  color: #999;
+  font-size: 28rpx;
+}
+
+.loading {
+  text-align: center;
+  padding: 100rpx 0;
+  color: #999;
+  font-size: 28rpx;
+}
+
+.create-btn {
+  position: fixed;
+  bottom: 40rpx;
+  right: 40rpx;
+  width: 100rpx;
+  height: 100rpx;
+  background: #07c160;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4rpx 8rpx rgba(0,0,0,0.2);
+}
+
+.create-btn text {
+  color: #fff;
+  font-size: 60rpx;
+  line-height: 1;
+} 

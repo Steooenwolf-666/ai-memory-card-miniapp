@@ -1,0 +1,58 @@
+<view class="container">
+  <!-- 编辑模式 -->
+  <block wx:if="{{mode === 'create' || mode === 'edit'}}">
+    <view class="form">
+      <view class="form-item">
+        <input class="title-input" 
+               placeholder="请输入标题" 
+               value="{{title}}"
+               bindinput="onTitleInput" />
+      </view>
+      <view class="form-item">
+        <textarea class="content-input" 
+                  placeholder="请输入内容（支持Markdown格式）" 
+                  value="{{content}}"
+                  bindinput="onContentInput" />
+      </view>
+    </view>
+    
+    <view class="button-group">
+      <button class="primary-btn" 
+              bindtap="saveCard" 
+              loading="{{loading}}">
+        保存
+      </button>
+    </view>
+  </block>
+
+  <!-- 查看模式 -->
+  <block wx:else>
+    <view class="card-detail">
+      <view class="card-title">{{title}}</view>
+      <view class="card-content">{{content}}</view>
+      <view class="card-status">当前状态：{{status}}</view>
+    </view>
+
+    <view class="button-group">
+      <button class="review-btn" 
+              data-status="全部记住"
+              bindtap="updateReviewStatus">
+        全部记住
+      </button>
+      <button class="review-btn" 
+              data-status="部分记住"
+              bindtap="updateReviewStatus">
+        部分记住
+      </button>
+      <button class="review-btn" 
+              data-status="需要重学"
+              bindtap="updateReviewStatus">
+        需要重学
+      </button>
+      <button class="delete-btn" 
+              bindtap="deleteCard">
+        删除卡片
+      </button>
+    </view>
+  </block>
+</view> 

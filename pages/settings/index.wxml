@@ -1,0 +1,20 @@
+<view class="container">
+  <view class="section">
+    <view class="section-title">复习提醒</view>
+    <view class="section-content">
+      <view class="description">开启后，每天凌晨1点将收到待复习卡片的提醒</view>
+      <view class="button-group" wx:if="{{!loading}}">
+        <button wx:if="{{!subscribed}}" 
+                class="subscribe-btn" 
+                bindtap="handleSubscribe">
+          开启提醒
+        </button>
+        <button wx:else 
+                class="unsubscribe-btn" 
+                bindtap="handleUnsubscribe">
+          取消提醒
+        </button>
+      </view>
+    </view>
+  </view>
+</view> 

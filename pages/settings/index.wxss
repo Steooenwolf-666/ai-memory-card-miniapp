@@ -1,0 +1,39 @@
+.container {
+  padding: 30rpx;
+  min-height: 100vh;
+  background: #f6f6f6;
+}
+
+.section {
+  background: #fff;
+  border-radius: 10rpx;
+  padding: 30rpx;
+  margin-bottom: 30rpx;
+}
+
+.section-title {
+  font-size: 32rpx;
+  font-weight: bold;
+  margin-bottom: 20rpx;
+}
+
+.description {
+  font-size: 28rpx;
+  color: #666;
+  margin-bottom: 30rpx;
+}
+
+.button-group {
+  margin-top: 30rpx;
+}
+
+.subscribe-btn {
+  background: #07c160;
+  color: #fff;
+}
+
+.unsubscribe-btn {
+  background: #fff;
+  color: #666;
+  border: 1rpx solid #ddd;
+} 

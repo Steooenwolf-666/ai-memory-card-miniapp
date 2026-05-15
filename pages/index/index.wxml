@@ -1,0 +1,33 @@
+<view class="container">
+  <!-- 顶部状态栏 -->
+  <view class="status-bar">
+    <view class="status-text">今日待复习：{{cardList.length}}张卡片</view>
+  </view>
+
+  <!-- 卡片列表 -->
+  <view class="card-list" wx:if="{{!loading && cardList.length > 0}}">
+    <view class="card-item" 
+          wx:for="{{cardList}}" 
+          wx:key="_id"
+          bindtap="onViewCard"
+          data-id="{{item._id}}">
+      <view class="card-title">{{item.title}}</view>
+      <view class="card-status">{{item.status}}</view>
+    </view>
+  </view>
+
+  <!-- 空状态 -->
+  <view class="empty-state" wx:if="{{!loading && cardList.length === 0}}">
+    <text>今天没有需要复习的卡片</text>
+  </view>
+
+  <!-- 加载状态 -->
+  <view class="loading" wx:if="{{loading}}">
+    <text>加载中...</text>
+  </view>
+
+  <!-- 创建按钮 -->
+  <view class="create-btn" bindtap="onCreateCard">
+    <text>+</text>
+  </view>
+</view> 
